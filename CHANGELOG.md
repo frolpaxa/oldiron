@@ -6,6 +6,17 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-09-24
+
+### Fixed
+
+- Restore the `License :: OSI Approved :: MIT License` classifier, dropped while reverting
+  the PEP 639 license field. PyPI already showed the licence, but the classifier is what
+  licence-based search filters use.
+- Point the PyPI badges at `.svg` URLs. GitHub's image proxy had cached the "not found"
+  responses from before the package was published, and a new URL is the only way to get it
+  to look again.
+
 ## [0.1.0] - 2026-09-23
 
 First release.
@@ -48,5 +59,6 @@ First release.
   forces that layout, and `--json` is unaffected by either.
 - Documentation on Read the Docs, and publication to PyPI through trusted publishing.
 
-[Unreleased]: https://github.com/frolpaxa/oldiron/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/frolpaxa/oldiron/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/frolpaxa/oldiron/releases/tag/v0.1.1
 [0.1.0]: https://github.com/frolpaxa/oldiron/releases/tag/v0.1.0

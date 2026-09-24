@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "oldiron"
-version = "0.1.0"
+version = "0.1.1"
 description = "Run local LLMs on the hardware you already have: compatibility doctor and memory planner for llama.cpp on old NVIDIA GPUs and Apple Silicon."
 readme = "README.md"
 # PEP 639's string form (license = "MIT") needs setuptools>=77, which has no
@@ -33,6 +33,7 @@ classifiers = [
     "Environment :: GPU :: NVIDIA CUDA",
     "Intended Audience :: Developers",
     "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.11",

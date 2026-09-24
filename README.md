@@ -1,10 +1,10 @@
 # oldiron
 
-[![PyPI](https://img.shields.io/pypi/v/oldiron)](https://pypi.org/project/oldiron/)
-[![Python](https://img.shields.io/pypi/pyversions/oldiron)](https://pypi.org/project/oldiron/)
+[![PyPI](https://img.shields.io/pypi/v/oldiron.svg)](https://pypi.org/project/oldiron/)
+[![Python](https://img.shields.io/pypi/pyversions/oldiron.svg)](https://pypi.org/project/oldiron/)
 [![Docs](https://readthedocs.org/projects/oldiron/badge/?version=latest)](https://oldiron.readthedocs.io)
 [![Tests](https://github.com/frolpaxa/oldiron/actions/workflows/ci.yml/badge.svg)](https://github.com/frolpaxa/oldiron/actions/workflows/ci.yml)
-[![License](https://img.shields.io/pypi/l/oldiron)](LICENSE)
+[![License](https://img.shields.io/pypi/l/oldiron.svg)](LICENSE)
 
 **Run local LLMs on the hardware you already have.**
 
