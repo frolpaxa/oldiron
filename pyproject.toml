@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=77.0"]
+requires = ["setuptools>=68.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,7 +7,11 @@ name = "oldiron"
 version = "0.1.0"
 description = "Run local LLMs on the hardware you already have: compatibility doctor and memory planner for llama.cpp on old NVIDIA GPUs and Apple Silicon."
 readme = "README.md"
-license = "MIT"
+# PEP 639's string form (license = "MIT") needs setuptools>=77, which has no
+# release for Python 3.8 -- and old machines are the point of this project.
+# setuptools deprecates this table form as of 2027-02-18; switch to the string
+# once the floor moves to Python 3.9.
+license = { text = "MIT" }
 requires-python = ">=3.8"
 authors = [
     { name = "Paul" },
