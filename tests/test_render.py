@@ -1,5 +1,7 @@
 """Tests for the two renderers."""
 
+from __future__ import annotations
+
 import io
 import struct
 from pathlib import Path
