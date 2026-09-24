@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oldiron"
+version = "0.1.0"
+description = "Run local LLMs on the hardware you already have: compatibility doctor and memory planner for llama.cpp on old NVIDIA GPUs and Apple Silicon."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+authors = [
+    { name = "Paul" },
+]
+keywords = [
+    "llama.cpp",
+    "llm",
+    "gguf",
+    "huggingface",
+    "cuda",
+    "metal",
+    "pascal",
+    "tesla-p40",
+    "apple-silicon",
+    "vram",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: GPU :: NVIDIA CUDA",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: System :: Hardware",
+    "Topic :: Utilities",
+]
+dependencies = []
+
+[project.optional-dependencies]
+# Pretty output. Pure Python, no compiled wheels, so it is safe even on the old
+# CPUs this tool exists for -- but oldiron never requires it.
+rich = ["rich>=13.0"]
+test = ["pytest", "rich>=13.0"]
+docs = ["sphinx>=7.0", "shibuya", "myst-parser", "rich>=13.0"]
+
+[project.urls]
+Homepage = "https://github.com/frolpaxa/oldiron"
+Repository = "https://github.com/frolpaxa/oldiron"
+Documentation = "https://oldiron.readthedocs.io"
+Issues = "https://github.com/frolpaxa/oldiron/issues"
+
+[project.scripts]
+oldiron = "oldiron.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
